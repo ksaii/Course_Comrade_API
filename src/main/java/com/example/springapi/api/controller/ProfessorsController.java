@@ -44,7 +44,7 @@ public class ProfessorsController {
     @DeleteMapping("/{professorId}")
     public ResponseEntity<String> deleteProfessor(@PathVariable int professorId) {
         professorsService.deleteProfessor(professorId);
-        return new ResponseEntity<>("Professor deleted Success", HttpStatus.OK);
+        return new ResponseEntity<>("Professor deleted Successfully", HttpStatus.OK);
     }
 
     @GetMapping("/{classId}/classes")
