@@ -20,14 +20,6 @@ public class ClassesController {
     @Autowired
     public ClassesController(ClassesService classesService) {this.classesService = classesService;}
 
-    /*@GetMapping("/classes")
-    public Classes getClass(@RequestParam Integer id){
-        Optional classes = classesService.getClasses(id);
-        if(classes.isPresent()) {
-            return (Classes) classes.get();
-        }
-        return null;
-    }*/
 
     @GetMapping
     public List<Classes> getAllClasses() {
